@@ -1,0 +1,39 @@
+@import "../../sass/variables.scss";
+@import "../../sass/functions.scss";
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 130px;
+  background-color: $secondary-color;
+  box-shadow: 20px 20px 33px 20px rgba(0, 0, 0, 0.5);
+
+  &--img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 115px;
+    height: 110px;
+    border: 6px solid white;
+    border-radius: 10px;
+  }
+  &__list-container {
+    ul {
+      display: flex;
+      justify-content: space-around;
+      width: 450px;
+      list-style: none;
+      font-size: 25px;
+      li {
+        a {
+          color: $primary-color;
+          text-decoration: none;
+        }
+        a:hover {
+          color: get-opacity($primary-color, 0.7);
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
